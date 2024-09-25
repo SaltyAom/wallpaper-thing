@@ -17,11 +17,11 @@
 			"bundleIdentifier": "com.saltyaom.wallpaperthing"
 		},
 		"android": {
-			"adaptiveIcon": {
-				"foregroundImage": "./assets/images/adaptive-icon.png",
-				"backgroundColor": "#ffffff"
-			},
-			"package": "com.saltyaom.wallpaperthing"
+			"package": "com.saltyaom.wallpaperthing",
+			"permissions": [
+				"android.permission.READ_EXTERNAL_STORAGE",
+				"android.permission.WRITE_EXTERNAL_STORAGE"
+			]
 		},
 		"web": {
 			"bundler": "metro",
@@ -50,6 +50,20 @@
 		],
 		"experiments": {
 			"typedRoutes": true
+		},
+		"extra": {
+			"router": {
+				"origin": false
+			},
+			"eas": {
+				"projectId": "970c4d4e-c759-40bd-965a-cc3a86ed2ab6"
+			}
+		},
+		"runtimeVersion": {
+			"policy": "appVersion"
+		},
+		"updates": {
+			"url": "https://u.expo.dev/970c4d4e-c759-40bd-965a-cc3a86ed2ab6"
 		}
 	}
 }
